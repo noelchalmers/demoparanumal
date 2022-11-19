@@ -7,6 +7,6 @@ make -j `nproc`
 sudo apt install gmsh
 
 #run gmsh
-gmsh ../../meshes/insSquareCylinder2D.geo -2 -format msh22 -o insSquareCylinder2D.msh
+gmsh insSquareCylinder2D.geo -2 -o insSquareCylinder2D.msh
 
 #make a .rc, use this .msh, add [CFL NUMBER] 0.5
