@@ -1,0 +1,3 @@
+[submodule "libparanumal"]
+	path = libparanumal
+	url = https://github.com/paranumal/libparanumal.git
