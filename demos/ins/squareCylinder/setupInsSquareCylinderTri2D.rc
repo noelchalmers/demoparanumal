@@ -2,7 +2,7 @@
 2.0
 
 [DATA FILE]
-insRampedUniform2D.h
+insUniform2D.h
 
 [MESH FILE]
 insSquareCylinder2D.msh
@@ -14,7 +14,7 @@ insSquareCylinder2D.msh
 3
 
 [POLYNOMIAL DEGREE]
-7
+6
 
 [THREAD MODEL]
 CUDA
@@ -88,7 +88,7 @@ MASSMATRIX
 QR
 
 [VELOCITY INITIAL GUESS HISTORY SPACE DIMENSION]
-2
+8
 
 [VELOCITY INITIAL GUESS EXTRAP DEGREE]
 1
