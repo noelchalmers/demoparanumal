@@ -1,5 +1,520 @@
 demoparanumal/demos/ins/squareCylinder$ ../../../libparanumal/solvers/ins/insMain setupInsSquareCylinderTri2D.rc
 
+Cloning into 'demoparanumal'...
+Submodule 'libparanumal' (https://github.com/paranumal/libparanumal.git) registered for path 'libparanumal'
+Cloning into 'demoparanumal/libparanumal'...
+Submodule path 'libparanumal': checked out 'cee9c5eeb1a5d95339affd384c82e582c0fedbc5'
+Submodule 'occa' (https://github.com/libocca/occa) registered for path 'libparanumal/occa'
+Cloning into 'demoparanumal/libparanumal/occa'...
+Submodule path 'libparanumal/occa': checked out '11552d0dc02fb9880f61f46e46115b6a50dada32'
+diff: demoparanumal/libparanumal/occa/include/occa/defines/compiledDefines.hpp: No such file or directory
+ - [C++]  demoparanumal/libparanumal/occa/src/core/kernelArg.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/core/device.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/dtype/dtype.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/functional/functionDefinition.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/core/streamTag.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/core/memory.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/core/launchedKernel.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/c/memory.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/hip/kernel.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/functional/scope.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/opencl/memory.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/core/device.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/functionStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/dpcpp/device.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/core/base.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/api/metal/polyfill.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/functional/utils.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/type/array.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/utils/logging.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/dpcpp/registration.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/types/dim.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/cuda/device.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/hip/streamTag.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/c/kernel.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/c/dtype.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/functional/baseFunction.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/opencl/buffer.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/experimental/kernelBuilder.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/functional/range.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/core/memory.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/c/base.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/utils/io.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/types/json.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/hip/registration.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/loops/forLoop.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/core/stream.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/core/kernel.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/core/stream.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/utils/exception.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/utils/sys.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/opencl/utils.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/io/output.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/hip/device.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/c/device.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/hip/stream.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/parenthesesNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/types/primitive.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/c/io.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/bin/occa.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/serial/serialTag.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/cuda/utils.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/serial/buffer.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/metal/kernel.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/utils/mutex.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/modes/oklForStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/c/types.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/charNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/vartypeNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/cuda/buffer.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/mpi.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/c/cli.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/dpcpp/kernel.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/type/union.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/types/typeinfo.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/openmp/registration.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/continueStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/c/scope.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/pragmaStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/functionNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/operator.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/openmp/device.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/type/structure.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/c/json.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/directiveStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/core/launchedDevice.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/io/cache.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/serial/memory.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/dpcpp/buffer.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/c/experimental/kernelBuilder.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/metal/stream.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/typeNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/cuda/memory.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/builtins/attributes/exclusive.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/serial/registration.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/openmp/utils.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/opencl/registration.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/type/typedef.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/core/streamTag.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/utils/misc.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/type/functionPtr.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/subscriptNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/functional/functionStore.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/core/buffer.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/metal/memory.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/hip/buffer.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/utils/gc.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/hip/memory.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/tokenizer.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/io/utils.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/parser.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/type/struct.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/declarationStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/variableNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/metal/device.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/switchStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/newNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/returnStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/rightUnaryOpNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/token/operatorToken.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/statementArray.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/processingStages.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/utils/styling.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/core/kernel.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/specialMacros.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/hip/utils.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/token/newlineToken.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/gotoStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/qualifier.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/elseStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/dtype/builtins.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/reinterpretCastNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/token/stringToken.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/loops/typelessForLoop.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/funcCastNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/emptyNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/metal/streamTag.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/defaultStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/statement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/token/typeToken.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/utils/vector.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/forStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/type/primitive.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/type/function.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/utils/env.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/cuda/registration.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/namespaceStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/type/enum.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/serial/stream.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/ifStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/classAccessStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/builtins/attributes/maxInnerDims.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/primitiveNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/builtins/types.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/utils/cli.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/opencl/stream.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/cuda/kernel.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/ternaryOpNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/builtins/attributes/globalPtr.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/scope.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/dpcpp/memory.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/token/charToken.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/token/identifierToken.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/utils/lex.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/identifierNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/loops/iteration.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/type/vartype.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/file.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/dpcpp/stream.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/opencl/streamTag.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/metal/buffer.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/cuda/stream.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/type/class.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/utils/string.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/modes/withLauncher.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/exprOpNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/throwNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/builtins/attributes/dim.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/cudaCallNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/functionDeclStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/c/kernel_fortran_interface.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/caseStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/opencl/device.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/constCastNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/builtins/attributes/inner.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/commentStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/dpcpp/streamTag.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/dpcpp/utils.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/binaryOpNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/modes/metal.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/modes/hip.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/builtins/attributes/outer.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/exprNodeArray.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/builtins/attributes/restrict.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/tokenContext.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/expr.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/serial/device.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/elifStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/whileStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/serial/kernel.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/token/token.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/type/type.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/expressionStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/builtins/attributes/kernel.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/builtins/attributes/implicitArg.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/cuda/streamTag.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/callNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/builtins/attributes/noBarrier.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/opencl/kernel.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/modes/metal/registration.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/utils/hash.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/breakStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/blockStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/sourceCodeStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/utils/testing.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/type/lambda.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/builtins/attributes/atomic.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/emptyStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/loaders/variableLoader.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/modes/openmp.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/expressionParser.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/variable.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/token/pragmaToken.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/dynamicCastNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statement/gotoLabelStatement.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/sizeofNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statementPeeker.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/exprNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/utils/trie.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/type/pointer.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/keyword.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/loaders/structLoader.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/builtins/attributes/barrier.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/modes/okl.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/staticCastNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/modes/dpcpp.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/dpcppLocalMemoryNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/modes/cuda.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/token/directiveToken.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/tupleNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/token/variableToken.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/builtins/attributes/shared.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/token/vartypeToken.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/leftUnaryOpNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/macro.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/parenCastNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/statementContext.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/deleteNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/stringNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/kernelMetadata.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/dpcppAtomicNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/pairNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/attribute.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/modes/opencl.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/preprocessor.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/token/commentToken.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/modes/serial.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/token/unknownToken.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/token/primitiveToken.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/expr/lambdaNode.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/token/qualifierToken.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/printer.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/token/functionToken.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/loaders/attributeLoader.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/builtins/attributes/tile.cpp
+ - [C++]  demoparanumal/libparanumal/occa/src/occa/internal/lang/loaders/typeLoader.cpp
+ - [lib]  demoparanumal/libparanumal/occa/lib/libocca.so
+ - [bin]  demoparanumal/libparanumal/occa/bin/occa
+> occa info
+    ========+======================+==================================================
+     CPU(s) | Processor Name       | Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz         
+            | Memory               | 376.57 GB                                        
+            | Clock Frequency      | 3.7 MHz                                          
+            | SIMD Instruction Set | AVX2                                             
+            | SIMD Width           | 256 bits                                         
+            | L1d Cache Size       |    32 KB                                         
+            | L1i Cache Size       |    32 KB                                         
+            | L2 Cache Size        |     1 MB                                         
+            | L3 Cache Size        | 19.25 MB                                         
+    ========+======================+==================================================
+     OpenCL | Platform 0           | NVIDIA CUDA                                      
+            |----------------------+--------------------------------------------------
+            | Device 0             | NVIDIA TITAN V                                   
+            | Device Type          | gpu                                              
+            | Compute Cores        | 80                                               
+            | Global Memory        | 11.75 GB                                         
+            |----------------------+--------------------------------------------------
+            | Device 1             | NVIDIA TITAN V                                   
+            | Device Type          | gpu                                              
+            | Compute Cores        | 80                                               
+            | Global Memory        | 11.78 GB                                         
+            |----------------------+--------------------------------------------------
+            | Platform 1           | Portable Computing Language                      
+            |----------------------+--------------------------------------------------
+            | Device 0             | pthread-Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz 
+            | Device Type          | cpu                                              
+            | Compute Cores        | 24                                               
+            | Global Memory        | 374.57 GB                                        
+    ========+======================+==================================================
+     CUDA   | Device Name          | NVIDIA TITAN V                                   
+            | Device ID            | 0                                                
+            | Memory               | 11.75 GB                                         
+            |----------------------+--------------------------------------------------
+            | Device Name          | NVIDIA TITAN V                                   
+            | Device ID            | 1                                                
+            | Memory               | 11.78 GB                                         
+    ========+======================+==================================================
+Compiling platformProperties.o
+Compiling platformSettings.o
+Compiling rankDecomp.o
+Compiling settings.o
+Compiling timer.o
+Compiling platformBuildKernel.o
+Compiling exception.o
+Compiling platformDeviceConfig.o
+Compiling memory.o
+Compiling comm.o
+Building library libcore.a
+Compiling linAlgMatrixTranspose.o
+Compiling linAlgMatrixInverse.o
+Compiling linAlgSetup.o
+Compiling linAlgMatrixRightSolve.o
+Compiling linAlg.o
+Compiling linAlgMatrixEig.o
+Compiling linAlgMatrixConditionNumber.o
+Compiling initialGuess.o
+Compiling linearSolverPMINRES.o
+Compiling linearSolverPGMRES.o
+Compiling linearSolver.o
+Compiling linearSolverNBFPCG.o
+Compiling linearSolverNBPCG.o
+Compiling linearSolverPCG.o
+Building library liblinAlg.a
+Compiling ogsOperator.o
+Compiling ogsHalo.o
+Compiling ogsAllToAll.o
+Compiling ogs.o
+Compiling ogsCrystalRouter.o
+Compiling ogsUtils.o
+Compiling ogsAuto.o
+Compiling ogsPairwise.o
+Compiling ogsSetup.o
+Building library liblinearSolver.a
+Compiling parAlmondKcycle.o
+Compiling parAlmondCoarseOAS.o
+Compiling parAlmondKernels.o
+Compiling parAlmondAMGLevel.o
+Compiling parAlmondMultigrid.o
+Compiling parAlmondAMGSmoother.o
+Compiling parAlmondStrongGraph.o
+Compiling parAlmondSpMM.o
+Compiling parAlmond.o
+Compiling parAlmondCoarsenLevel.o
+Compiling parAlmondVcycle.o
+Compiling parAlmondFormAggregates.o
+Compiling parAlmondSmoothPrologator.o
+Compiling parAlmondSettings.o
+Compiling parAlmondTentativeProlongator.o
+Compiling parAlmondGalerkinProd.o
+Compiling parAlmondparCSR.o
+Compiling parAlmondCoarseExact.o
+Compiling parAlmondTranspose.o
+Compiling parAlmondAMGSetup.o
+Building library libogs.a
+Compiling parAdogsMultigridTranspose.o
+Compiling parAdogsSpectralPartition.o
+Compiling parAdogsCuthillMckee.o
+Compiling parAdogsRefine.o
+Compiling parAdogsMultigridSmooth.o
+Compiling parAdogsSpectralBipartition.o
+Compiling parAdogsParallelPivot.o
+Compiling parAdogsFiedlerVector.o
+Compiling parAdogsMultigridAggregate.o
+Compiling parAdogsMultigrid.o
+Compiling parAdogsInertialPartition.o
+Compiling parAdogsMeshPartition.o
+Compiling parAdogsMultigridSpMM.o
+Compiling parAdogsMultigridCoarseSolver.o
+Compiling parAdogsMultigridLaplacian.o
+Compiling parAdogsMatrix.o
+Compiling parAdogsMultigridSmoothPrologator.o
+Compiling parAdogsConnect.o
+Compiling parAdogsInertialBipartition.o
+Compiling parAdogsGraph.o
+Compiling parAdogsMultigridTentativeProlongator.o
+Compiling parAdogsMultigridSetup.o
+Compiling parAdogsSolve.o
+Compiling parAdogsSettings.o
+Building library libparAlmond.a
+Building library libparAdogs.a
+Compiling meshHaloTraceSetup.o
+Compiling meshPlotInterpQuad2D.o
+Compiling meshSettings.o
+Compiling meshSetup.o
+Compiling meshBasisHex3D.o
+Compiling meshReferenceNodesTri2D.o
+Compiling meshSetupBoxQuad2D.o
+Compiling meshPlotInterpTet3D.o
+Compiling meshBasisTet3D.o
+Compiling meshSurfaceGeometricFactorsTet3D.o
+Compiling meshReadGmshQuad3D.o
+Compiling meshSurfaceGeometricFactorsTri3D.o
+Compiling meshMassMatrixApply.o
+Compiling meshPlotInterpTri2D.o
+Compiling meshCubatureSetupQuad2D.o
+Compiling meshPhysicalNodesTet3D.o
+Compiling meshConnectFaceVertices.o
+Compiling meshCubatureNodesHex3D.o
+Compiling meshReferenceNodesQuad2D.o
+Compiling meshCubatureSetupTet3D.o
+Compiling meshCubatureNodesQuad2D.o
+Compiling meshPhysicalNodesTri3D.o
+Compiling meshPhysicalNodesHex3D.o
+Compiling meshSetupBoxTet3D.o
+Compiling meshCubatureNodesQuad3D.o
+Compiling meshGeometricFactorsQuad3D.o
+Compiling meshReadGmshTet3D.o
+Compiling meshMinCharacteristicLength.o
+Compiling meshSetupPmlBoxQuad2D.o
+Compiling meshCubatureSetupTri2D.o
+Compiling meshReadGmshQuad2D.o
+Compiling meshGatherScatterSetup.o
+Compiling meshCubatureNodesTri2D.o
+Compiling meshCubatureNodesTet3D.o
+Compiling meshReadGmshTri2D.o
+Compiling meshConnectBoundary.o
+Compiling meshPartition.o
+Compiling meshGeometricFactorsTri3D.o
+Compiling meshSetupBoxTri2D.o
+Compiling meshPlotInterpHex3D.o
+Compiling meshHaloSetup.o
+Compiling meshSurfaceGeometricFactorsHex3D.o
+Compiling meshSetElementType.o
+Compiling meshGeometricFactorsHex3D.o
+Compiling meshBasis1D.o
+Compiling meshPhysicalNodesQuad3D.o
+Compiling meshSetupPmlBoxTet3D.o
+Compiling meshSurfaceGeometricFactorsTri2D.o
+Compiling meshMultiRateHaloTraceSetup.o
+Compiling meshPhysicalNodesTri2D.o
+Compiling meshHaloRingSetup.o
+Compiling meshBasisTri2D.o
+Compiling meshSetupPmlBoxTri2D.o
+Compiling meshPmlSetup.o
+Compiling meshBasisQuad2D.o
+Compiling meshSetupBoxHex3D.o
+Compiling meshSurfaceGeometricFactorsQuad3D.o
+Compiling meshReadGmshHex3D.o
+Compiling meshSetupNewDegree.o
+Compiling meshSurfaceGeometricFactorsQuad2D.o
+Compiling meshReferenceNodesHex3D.o
+Compiling meshGeometricFactorsTet3D.o
+Compiling meshPhysicalNodesQuad2D.o
+Compiling meshMultiRateSetup.o
+Compiling meshGeometricFactorsQuad2D.o
+Compiling meshGeometricFactorsTri2D.o
+Compiling meshSetupSEMFEM.o
+Compiling meshConnectFaceNodes.o
+Compiling meshCubatureSetupHex3D.o
+Compiling meshSetupPmlBoxHex3D.o
+Compiling meshConnect.o
+Compiling meshConnectNodes.o
+Compiling meshSetupRingPatch.o
+Compiling meshReferenceNodesTet3D.o
+Compiling meshCubatureNodesTri3D.o
+Compiling meshReadGmshTri3D.o
+Building library libmesh.a
+Compiling timeStepperSARK4.o
+Compiling timeStepperEXTBDF3.o
+Compiling timeStepperDOPRI5.o
+Compiling timeStepperSAAB3.o
+Compiling timeStepperSSBDF3.o
+Compiling timeStepperSARK5.o
+Compiling timeStepper.o
+Compiling timeStepperLSERK4.o
+Compiling timeStepperMRSAAB3.o
+Compiling timeStepperMRAB3.o
+Compiling timeStepperAB3.o
+Building library libtimeStepper.a
+Compiling ellipticPreconMultiGrid.o
+Compiling ellipticOperator.o
+Compiling ellipticPreconMultiGridLevel.o
+Compiling ellipticBoundarySetup.o
+Compiling ellipticBuildOperatorMatrixContinuous.o
+Compiling ellipticBuildOperatorDiagonal.o
+Compiling ellipticSetupNewDegree.o
+Compiling ellipticPreconJacobi.o
+Compiling ellipticBuildOperatorMatrixIpdg.o
+Compiling ellipticPreconParAlmond.o
+Compiling ellipticPreconSEMFEM.o
+Compiling ellipticSolve.o
+Compiling ellipticPlotFields.o
+Compiling ellipticRun.o
+Compiling ellipticPreconMassMatrix.o
+Compiling ellipticZeroMean.o
+Compiling ellipticSettings.o
+Compiling ellipticSetup.o
+Compiling ellipticPreconOAS.o
+Compiling ellipticSetupRingPatch.o
+Building library libelliptic.a
+Compiling insDiffusion.o
+Compiling insPressureIncrementSolve.o
+Compiling insReport.o
+Compiling insSetup.o
+Compiling insSettings.o
+Compiling insVelocitySolve.o
+Compiling insStep.o
+Compiling insSubcycle.o
+Compiling insGradient.o
+Compiling insPressureSolve.o
+Compiling insAdvection.o
+Compiling insRun.o
+Compiling insDivergence.o
+Compiling insPlotFields.o
+Compiling insMain.o
+Linking insMain
+
  _ _ _     ____                                             _ 
 | (_) |__ |  _ \ __ _ _ __ __ _ _ __  _   _ _ __ ___   __ _| |
 | | | '_ \| |_) / _` | '__/ _` | '_ \| | | | '_ ` _ \ / _` | |
@@ -53,7 +568,7 @@ Value: insUniform2D.h
 Description: Boundary and Initial conditions header
 
 Name:  [VISCOSITY]
-Value: 0.01
+Value: 0.004
 Description: Diffusion strength
 
 Name:  [ADVECTION TYPE]
@@ -67,9 +582,18 @@ Description: Use Pressure increment update
 Possible values: { TRUE, FALSE }
 
 Name:  [TIME INTEGRATOR]
-Value: EXTBDF3
+Value: SSBDF3
 Description: Time integration method
 Possible values: { EXTBDF3, SSBDF3 }
+
+Name:  [NUMBER OF SUBCYCLES]
+Value: 4
+Description: Ratio of full timestep size to subcycling step size
+
+Name:  [SUBCYCLING TIME INTEGRATOR]
+Value: DOPRI5
+Description: Time integration method used in subcycling
+Possible values: { AB3, DOPRI5, LSERK4 }
 
 Name:  [START TIME]
 Value: 0
@@ -84,7 +608,7 @@ Value: 2
 Description: Time between printing output data
 
 Name:  [OUTPUT TO FILE]
-Value: FALSE
+Value: TRUE
 Description: Flag for writing fields to VTU files
 Possible values: { TRUE, FALSE }
 
@@ -105,7 +629,7 @@ Description: Iterative Linear Solver to use for solve
 Possible values: { PCG, FPCG, NBPCG, NBFPCG, PGMRES, PMINRES }
 
 Name:  [VELOCITY INITIAL GUESS STRATEGY]
-Value: EXTRAP
+Value: QR
 Description: Strategy for selecting initial guess for linear solver
 Possible values: { NONE, ZERO, CLASSIC, QR, EXTRAP }
 
@@ -185,25 +709,25 @@ Description: Number of Chebyshev iteration to run in smoother
    Partitioning time:   0.00 seconds                                                          |
 -----------------------------------------------------------------------------------------------
 ogs Setup: 0 unique labels shared.
-ogs Setup Time: 0.024702 seconds.
+ogs Setup Time: 0.024396 seconds.
 ogs Setup: 0 unique labels shared.
-ogs Setup Time: 0.024514 seconds.
+ogs Setup Time: 0.024209 seconds.
 ogs Setup: 0 unique labels shared.
-ogs Setup Time: 0.024907 seconds.
+ogs Setup Time: 0.024123 seconds.
 Compiling parALMOND Kernels...done.
 -----------------------------Multigrid pMG Degree  7----------------------------------------
 Building diagonal...done.
 -----------------------------Multigrid pMG Degree  4----------------------------------------
 ogs Setup: 0 unique labels shared.
-ogs Setup Time: 0.01126 seconds.
+ogs Setup Time: 0.009306 seconds.
 Building diagonal...done.
 -----------------------------Multigrid pMG Degree  2----------------------------------------
 ogs Setup: 0 unique labels shared.
-ogs Setup Time: 0.003453 seconds.
+ogs Setup Time: 0.00321 seconds.
 Building diagonal...done.
 -----------------------------Multigrid pMG Degree  1----------------------------------------
 ogs Setup: 0 unique labels shared.
-ogs Setup Time: 0.001758 seconds.
+ogs Setup Time: 0.018333 seconds.
 -----------------------------Multigrid AMG Setup--------------------------------------------
 Building full FEM matrix...done.
 Setting up AMG...done.
@@ -230,84 +754,84 @@ Level |    Type    |    Dimension   |  Per Rank Dim  |   nnz per row   |   Smoot
 --------------------------------------------------------------------------------------------
 
  0.00 (0), 42.46 (time, timestep, norm)
-Solver iterations: U -   5, V -   6, P -   1
- 2.00 (835), 42.52 (time, timestep, norm)
-Solver iterations: U -   4, V -   4, P -   1
- 4.00 (1670), 42.53 (time, timestep, norm)
-Solver iterations: U -   3, V -   4, P -   1
- 6.00 (2505), 42.55 (time, timestep, norm)
-Solver iterations: U -   2, V -   3, P -   1
- 8.00 (3340), 42.56 (time, timestep, norm)
-Solver iterations: U -   2, V -   3, P -   1
-10.00 (4175), 42.57 (time, timestep, norm)
-Solver iterations: U -   2, V -   2, P -   1
-12.00 (5010), 42.58 (time, timestep, norm)
-Solver iterations: U -   2, V -   2, P -   1
-14.00 (5845), 42.60 (time, timestep, norm)
-Solver iterations: U -   1, V -   2, P -   1
-16.00 (6680), 42.61 (time, timestep, norm)
-Solver iterations: U -   2, V -   2, P -   1
-18.00 (7515), 42.61 (time, timestep, norm)
-Solver iterations: U -   2, V -   2, P -   1
-20.00 (8350), 42.62 (time, timestep, norm)
-Solver iterations: U -   1, V -   2, P -   1
-22.00 (9185), 42.63 (time, timestep, norm)
-Solver iterations: U -   2, V -   2, P -   1
-24.00 (10020), 42.64 (time, timestep, norm)
-Solver iterations: U -   1, V -   2, P -   1
-26.00 (10855), 42.65 (time, timestep, norm)
-Solver iterations: U -   1, V -   2, P -   1
-28.00 (11690), 42.66 (time, timestep, norm)
-Solver iterations: U -   1, V -   2, P -   1
-30.00 (12525), 42.66 (time, timestep, norm)
-Solver iterations: U -   2, V -   2, P -   1
-32.00 (13360), 42.67 (time, timestep, norm)
-Solver iterations: U -   2, V -   2, P -   1
-34.00 (14195), 42.68 (time, timestep, norm)
-Solver iterations: U -   2, V -   2, P -   1
-36.00 (15030), 42.68 (time, timestep, norm)
-Solver iterations: U -   3, V -   2, P -   1
-38.00 (15865), 42.69 (time, timestep, norm)
-Solver iterations: U -   3, V -   3, P -   1
-40.00 (16700), 42.69 (time, timestep, norm)
-Solver iterations: U -   3, V -   3, P -   1
-42.00 (17535), 42.70 (time, timestep, norm)
-Solver iterations: U -   4, V -   4, P -   1
-44.00 (18370), 42.71 (time, timestep, norm)
-Solver iterations: U -   4, V -   4, P -   1
-46.00 (19205), 42.71 (time, timestep, norm)
-Solver iterations: U -   4, V -   4, P -   1
-48.00 (20040), 42.72 (time, timestep, norm)
-Solver iterations: U -   4, V -   4, P -   1
-50.00 (20875), 42.72 (time, timestep, norm)
-Solver iterations: U -   4, V -   5, P -   1
-52.00 (21710), 42.72 (time, timestep, norm)
-Solver iterations: U -   4, V -   5, P -   1
-54.00 (22545), 42.73 (time, timestep, norm)
-Solver iterations: U -   4, V -   5, P -   1
-56.00 (23380), 42.73 (time, timestep, norm)
-Solver iterations: U -   4, V -   5, P -   1
-58.00 (24215), 42.73 (time, timestep, norm)
-Solver iterations: U -   4, V -   5, P -   1
-60.00 (25050), 42.73 (time, timestep, norm)
-Solver iterations: U -   4, V -   5, P -   1
-62.00 (25885), 42.72 (time, timestep, norm)
-Solver iterations: U -   4, V -   5, P -   1
-64.00 (26720), 42.72 (time, timestep, norm)
-Solver iterations: U -   5, V -   5, P -   1
-66.00 (27555), 42.71 (time, timestep, norm)
-Solver iterations: U -   5, V -   5, P -   1
-68.00 (28390), 42.71 (time, timestep, norm)
-Solver iterations: U -   4, V -   5, P -   1
-70.00 (29225), 42.70 (time, timestep, norm)
-Solver iterations: U -   5, V -   5, P -   1
-72.00 (30060), 42.70 (time, timestep, norm)
-Solver iterations: U -   5, V -   5, P -   1
-74.00 (30895), 42.70 (time, timestep, norm)
-Solver iterations: U -   5, V -   5, P -   1
-76.00 (31730), 42.69 (time, timestep, norm)
-Solver iterations: U -   5, V -   5, P -   1
-78.00 (32564), 42.69 (time, timestep, norm)
-Solver iterations: U -   5, V -   5, P -   1
-80.00 (33399), 42.69 (time, timestep, norm)
-Solution norm =  42.6866578985878
+Solver iterations: U -   6, V -   6, P -   3
+ 2.00 (209), 42.52 (time, timestep, norm)
+Solver iterations: U -   6, V -   5, P -   2
+ 4.00 (418), 42.53 (time, timestep, norm)
+Solver iterations: U -   6, V -   5, P -   1
+ 6.01 (627), 42.55 (time, timestep, norm)
+Solver iterations: U -   6, V -   4, P -   2
+ 8.00 (835), 42.57 (time, timestep, norm)
+Solver iterations: U -   6, V -   4, P -   2
+10.00 (1044), 42.58 (time, timestep, norm)
+Solver iterations: U -   6, V -   4, P -   1
+12.01 (1253), 42.60 (time, timestep, norm)
+Solver iterations: U -   6, V -   4, P -   2
+14.01 (1462), 42.62 (time, timestep, norm)
+Solver iterations: U -   6, V -   4, P -   1
+16.00 (1670), 42.63 (time, timestep, norm)
+Solver iterations: U -   5, V -   4, P -   2
+18.00 (1879), 42.65 (time, timestep, norm)
+Solver iterations: U -   6, V -   5, P -   2
+20.01 (2088), 42.66 (time, timestep, norm)
+Solver iterations: U -   6, V -   5, P -   3
+22.01 (2297), 42.68 (time, timestep, norm)
+Solver iterations: U -   6, V -   5, P -   3
+24.00 (2505), 42.70 (time, timestep, norm)
+Solver iterations: U -   6, V -   7, P -   3
+26.00 (2714), 42.72 (time, timestep, norm)
+Solver iterations: U -   6, V -   7, P -   3
+28.01 (2923), 42.74 (time, timestep, norm)
+Solver iterations: U -   6, V -   6, P -   3
+30.01 (3132), 42.75 (time, timestep, norm)
+Solver iterations: U -   6, V -   6, P -   2
+32.00 (3340), 42.77 (time, timestep, norm)
+Solver iterations: U -   6, V -   6, P -   2
+34.00 (3549), 42.78 (time, timestep, norm)
+Solver iterations: U -   6, V -   6, P -   2
+36.01 (3758), 42.80 (time, timestep, norm)
+Solver iterations: U -   7, V -   6, P -   3
+38.01 (3967), 42.81 (time, timestep, norm)
+Solver iterations: U -   6, V -   6, P -   3
+40.00 (4175), 42.82 (time, timestep, norm)
+Solver iterations: U -   6, V -   7, P -   3
+42.00 (4384), 42.84 (time, timestep, norm)
+Solver iterations: U -   7, V -   7, P -   3
+44.01 (4593), 42.84 (time, timestep, norm)
+Solver iterations: U -   6, V -   6, P -   3
+46.01 (4802), 42.84 (time, timestep, norm)
+Solver iterations: U -   7, V -   7, P -   3
+48.00 (5010), 42.82 (time, timestep, norm)
+Solver iterations: U -   6, V -   7, P -   3
+50.00 (5219), 42.79 (time, timestep, norm)
+Solver iterations: U -   6, V -   6, P -   3
+52.01 (5428), 42.78 (time, timestep, norm)
+Solver iterations: U -   7, V -   6, P -   3
+54.01 (5637), 42.78 (time, timestep, norm)
+Solver iterations: U -   6, V -   6, P -   3
+56.00 (5845), 42.78 (time, timestep, norm)
+Solver iterations: U -   6, V -   7, P -   3
+58.00 (6054), 42.78 (time, timestep, norm)
+Solver iterations: U -   6, V -   6, P -   3
+60.01 (6263), 42.79 (time, timestep, norm)
+Solver iterations: U -   6, V -   6, P -   3
+62.01 (6472), 42.79 (time, timestep, norm)
+Solver iterations: U -   6, V -   7, P -   3
+64.00 (6680), 42.79 (time, timestep, norm)
+Solver iterations: U -   6, V -   7, P -   2
+66.00 (6889), 42.78 (time, timestep, norm)
+Solver iterations: U -   6, V -   7, P -   3
+68.01 (7098), 42.76 (time, timestep, norm)
+Solver iterations: U -   6, V -   6, P -   3
+70.01 (7307), 42.76 (time, timestep, norm)
+Solver iterations: U -   6, V -   7, P -   3
+72.00 (7515), 42.76 (time, timestep, norm)
+Solver iterations: U -   6, V -   6, P -   3
+74.00 (7724), 42.77 (time, timestep, norm)
+Solver iterations: U -   6, V -   6, P -   3
+76.01 (7933), 42.77 (time, timestep, norm)
+Solver iterations: U -   7, V -   7, P -   3
+78.00 (8141), 42.77 (time, timestep, norm)
+Solver iterations: U -   6, V -   6, P -   3
+80.00 (8350), 42.77 (time, timestep, norm)
+Solution norm =  42.7730573386852
