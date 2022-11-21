@@ -1,12 +1,22 @@
-#clone and build libp
-git clone --recursive --branch staging https://github.com/paranumal/libparanumal.git
-cd libparanumal/solvers/ins
+# to clone demoParanumal
+git clone --recursive https://github.com/paranumal/demoparanumal.git
+
+# to update libParanumal submodule
+cd demoparanumal/libparanumal
+git submodule update
+
+# build occa and configure occa directory path
+cd occa
+git submodule update
+export OCCA_DIR=`pwd`
+export LD_LIBRARY_PATH=$OCCA_DIR/lib:$LD_LIBRARY_PATH:$OCCA_DIR/lib
+make -j
+cd ../
+
+# to build ins example
+cd solvers/ins
 make -j `nproc`
 
-#install gmsh
-sudo apt install gmsh
-
-#run gmsh
-gmsh insSquareCylinder2D.geo -2 -o insSquareCylinder2D.msh
-
-#make a .rc, use this .msh, add [CFL NUMBER] 0.5
+# to run demoParanumal ins square cylinder example
+cd ../../../demos/ins/squareCylinder
+../../../libparanumal/solvers/ins/insMain setupInsSquareCylinderTri2D.rc
