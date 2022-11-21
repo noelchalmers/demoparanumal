@@ -1,0 +1,313 @@
+demoparanumal/demos/ins/squareCylinder$ ../../../libparanumal/solvers/ins/insMain setupInsSquareCylinderTri2D.rc
+
+ _ _ _     ____                                             _ 
+| (_) |__ |  _ \ __ _ _ __ __ _ _ __  _   _ _ __ ___   __ _| |
+| | | '_ \| |_) / _` | '__/ _` | '_ \| | | | '_ ` _ \ / _` | |
+| | | |_) |  __/ (_| | | | (_| | | | | |_| | | | | | | (_| | |
+|_|_|_.__/|_|   \__,_|_|  \__,_|_| |_|\__,_|_| |_| |_|\__,_|_|
+
+Version: 0.5.0 
+Contributing developers: Noel Chalmers, Ali Karakus, Kasia Swirydowicz,
+                         Anthony Austin, & Tim Warburton
+
+OCCA Settings:
+
+Name:  [THREAD MODEL]
+Value: CUDA
+Description: OCCA's Parallel execution platform
+Possible values: { Serial, OpenMP, CUDA, HIP, OpenCL }
+
+Name:  [DEVICE NUMBER]
+Value: 0
+Description: Parallel device number
+
+Mesh Settings:
+
+Name:  [MESH FILE]
+Value: insSquareCylinderTri2D.msh
+
+Name:  [MESH DIMENSION]
+Value: 2
+Description: Dimension of input mesh
+Possible values: { 2, 3 }
+
+Name:  [ELEMENT TYPE]
+Value: 3
+Description: Type of mesh elements (number of edges)
+Possible values: { 3, 4, 6, 12 }
+
+Name:  [POLYNOMIAL DEGREE]
+Value: 7
+Description: Degree of polynomial finite element space
+Possible values: { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+
+Name:  [PARADOGS PARTITIONING]
+Value: INERTIAL
+Description: Type of Mesh partitioning
+Possible values: { NONE, INERTIAL, SPECTRAL }
+
+INS Settings:
+
+Name:  [DATA FILE]
+Value: insUniform2D.h
+Description: Boundary and Initial conditions header
+
+Name:  [VISCOSITY]
+Value: 0.01
+Description: Diffusion strength
+
+Name:  [ADVECTION TYPE]
+Value: COLLOCATION
+Description: Integration type for flux terms
+Possible values: { COLLOCATION, CUBATURE }
+
+Name:  [PRESSURE INCREMENT]
+Value: FALSE
+Description: Use Pressure increment update
+Possible values: { TRUE, FALSE }
+
+Name:  [TIME INTEGRATOR]
+Value: EXTBDF3
+Description: Time integration method
+Possible values: { EXTBDF3, SSBDF3 }
+
+Name:  [START TIME]
+Value: 0
+Description: Start time for time integration
+
+Name:  [FINAL TIME]
+Value: 80.0
+Description: End time for time integration
+
+Name:  [OUTPUT INTERVAL]
+Value: 2
+Description: Time between printing output data
+
+Name:  [OUTPUT TO FILE]
+Value: FALSE
+Description: Flag for writing fields to VTU files
+Possible values: { TRUE, FALSE }
+
+Name:  [OUTPUT FILE NAME]
+Value: ins
+
+
+Velocity Solver Settings:
+
+Name:  [VELOCITY DISCRETIZATION]
+Value: CONTINUOUS
+Description: Type of Finite Element Discretization
+Possible values: { CONTINUOUS, IPDG }
+
+Name:  [VELOCITY LINEAR SOLVER]
+Value: PCG
+Description: Iterative Linear Solver to use for solve
+Possible values: { PCG, FPCG, NBPCG, NBFPCG, PGMRES, PMINRES }
+
+Name:  [VELOCITY INITIAL GUESS STRATEGY]
+Value: EXTRAP
+Description: Strategy for selecting initial guess for linear solver
+Possible values: { NONE, ZERO, CLASSIC, QR, EXTRAP }
+
+Name:  [VELOCITY INITIAL GUESS HISTORY SPACE DIMENSION]
+Value: 9
+Description: Dimension of the initial guess space
+
+Name:  [VELOCITY PRECONDITIONER]
+Value: MASSMATRIX
+Description: Preconditioning Strategy
+Possible values: { NONE, JACOBI, MASSMATRIX, PARALMOND, MULTIGRID, SEMFEM, OAS }
+
+
+Pressure Solver Settings:
+
+Name:  [PRESSURE DISCRETIZATION]
+Value: CONTINUOUS
+Description: Type of Finite Element Discretization
+Possible values: { CONTINUOUS, IPDG }
+
+Name:  [PRESSURE LINEAR SOLVER]
+Value: FPCG
+Description: Iterative Linear Solver to use for solve
+Possible values: { PCG, FPCG, NBPCG, NBFPCG, PGMRES, PMINRES }
+
+Name:  [PRESSURE INITIAL GUESS STRATEGY]
+Value: QR
+Description: Strategy for selecting initial guess for linear solver
+Possible values: { NONE, ZERO, CLASSIC, QR, EXTRAP }
+
+Name:  [PRESSURE INITIAL GUESS HISTORY SPACE DIMENSION]
+Value: 9
+Description: Dimension of the initial guess space
+
+Name:  [PRESSURE PRECONDITIONER]
+Value: MULTIGRID
+Description: Preconditioning Strategy
+Possible values: { NONE, JACOBI, MASSMATRIX, PARALMOND, MULTIGRID, SEMFEM, OAS }
+
+Name:  [PRESSURE MULTIGRID COARSENING]
+Value: HALFDOFS
+Description: p-Multigrid coarsening strategy
+Possible values: { ALLDEGREES, HALFDEGREES, HALFDOFS }
+
+Name:  [PRESSURE MULTIGRID SMOOTHER]
+Value: CHEBYSHEV
+Description: p-Multigrid smoother
+Possible values: { DAMPEDJACOBI, CHEBYSHEV }
+
+Name:  [PRESSURE MULTIGRID CHEBYSHEV DEGREE]
+Value: 2
+Description: Smoothing iterations in Chebyshev smoother
+
+Name:  [PRESSURE PARALMOND CYCLE]
+Value: KCYCLE
+Description: Type of Multigrid Cycle
+Possible values: { VCYCLE, KCYCLE, EXACT }
+
+Name:  [PRESSURE PARALMOND SMOOTHER]
+Value: CHEBYSHEV
+Description: Type of Smoother
+Possible values: { DAMPEDJACOBI, CHEBYSHEV }
+
+Name:  [PRESSURE PARALMOND CHEBYSHEV DEGREE]
+Value: 2
+Description: Number of Chebyshev iteration to run in smoother
+
+--------------------------------------ParAdogs Report------------------------------------------
+-----------------------------------------------------------------------------------------------
+   Nranks   |    Elements   |   Per Rank Elements   |   Halo Faces   |   Per Rank Halo Faces  |
+            |               |       (min,avg,max)   |                |         (min,avg,max)  |
+-----------------------------------------------------------------------------------------------
+        1   |        4932   |                4932   |            0   |                     0  |
+            |               |                4932   |                |                     0  |
+            |               |                4932   |                |                     0  |
+-----------------------------------------------------------------------------------------------
+   Partitioning time:   0.00 seconds                                                          |
+-----------------------------------------------------------------------------------------------
+ogs Setup: 0 unique labels shared.
+ogs Setup Time: 0.024702 seconds.
+ogs Setup: 0 unique labels shared.
+ogs Setup Time: 0.024514 seconds.
+ogs Setup: 0 unique labels shared.
+ogs Setup Time: 0.024907 seconds.
+Compiling parALMOND Kernels...done.
+-----------------------------Multigrid pMG Degree  7----------------------------------------
+Building diagonal...done.
+-----------------------------Multigrid pMG Degree  4----------------------------------------
+ogs Setup: 0 unique labels shared.
+ogs Setup Time: 0.01126 seconds.
+Building diagonal...done.
+-----------------------------Multigrid pMG Degree  2----------------------------------------
+ogs Setup: 0 unique labels shared.
+ogs Setup Time: 0.003453 seconds.
+Building diagonal...done.
+-----------------------------Multigrid pMG Degree  1----------------------------------------
+ogs Setup: 0 unique labels shared.
+ogs Setup Time: 0.001758 seconds.
+-----------------------------Multigrid AMG Setup--------------------------------------------
+Building full FEM matrix...done.
+Setting up AMG...done.
+-----------------------------Multigrid Report-----------------------------------------------
+--------------------------------------------------------------------------------------------
+Level |    Type    |    Dimension   |  Per Rank Dim  |   nnz per row   |   Smoother        |
+      |            |                |  (min,max,avg) |  (min,max,avg)  |                   |
+--------------------------------------------------------------------------------------------
+   0  |    pMG     |        120954  |        120954  |   Matrix-free   |   Chebyshev       |
+      |            |                |        120954  |     Degree  7   |                   |
+      |            |                |        120954  |                 |                   |
+   1  |    pMG     |         39525  |         39525  |   Matrix-free   |   Chebyshev       |
+      |            |                |         39525  |     Degree  4   |                   |
+      |            |                |         39525  |                 |                   |
+   2  |    pMG     |          9899  |          9899  |   Matrix-free   |   Chebyshev       |
+      |            |                |          9899  |     Degree  2   |                   |
+      |            |                |          9899  |                 |                   |
+   3  |  parAlmond |          2484  |          2484  |             6   |   Chebyshev       |
+      |            |                |          2484  |             6   |                   |
+      |            |                |          2484  |             6   |                   |
+   4  |  parAlmond |           239  |           239  |            10   |   Exact Solve     |
+      |            |                |           239  |            10   |                   |
+      |            |                |           239  |            10   |                   |
+--------------------------------------------------------------------------------------------
+
+ 0.00 (0), 42.46 (time, timestep, norm)
+Solver iterations: U -   5, V -   6, P -   1
+ 2.00 (835), 42.52 (time, timestep, norm)
+Solver iterations: U -   4, V -   4, P -   1
+ 4.00 (1670), 42.53 (time, timestep, norm)
+Solver iterations: U -   3, V -   4, P -   1
+ 6.00 (2505), 42.55 (time, timestep, norm)
+Solver iterations: U -   2, V -   3, P -   1
+ 8.00 (3340), 42.56 (time, timestep, norm)
+Solver iterations: U -   2, V -   3, P -   1
+10.00 (4175), 42.57 (time, timestep, norm)
+Solver iterations: U -   2, V -   2, P -   1
+12.00 (5010), 42.58 (time, timestep, norm)
+Solver iterations: U -   2, V -   2, P -   1
+14.00 (5845), 42.60 (time, timestep, norm)
+Solver iterations: U -   1, V -   2, P -   1
+16.00 (6680), 42.61 (time, timestep, norm)
+Solver iterations: U -   2, V -   2, P -   1
+18.00 (7515), 42.61 (time, timestep, norm)
+Solver iterations: U -   2, V -   2, P -   1
+20.00 (8350), 42.62 (time, timestep, norm)
+Solver iterations: U -   1, V -   2, P -   1
+22.00 (9185), 42.63 (time, timestep, norm)
+Solver iterations: U -   2, V -   2, P -   1
+24.00 (10020), 42.64 (time, timestep, norm)
+Solver iterations: U -   1, V -   2, P -   1
+26.00 (10855), 42.65 (time, timestep, norm)
+Solver iterations: U -   1, V -   2, P -   1
+28.00 (11690), 42.66 (time, timestep, norm)
+Solver iterations: U -   1, V -   2, P -   1
+30.00 (12525), 42.66 (time, timestep, norm)
+Solver iterations: U -   2, V -   2, P -   1
+32.00 (13360), 42.67 (time, timestep, norm)
+Solver iterations: U -   2, V -   2, P -   1
+34.00 (14195), 42.68 (time, timestep, norm)
+Solver iterations: U -   2, V -   2, P -   1
+36.00 (15030), 42.68 (time, timestep, norm)
+Solver iterations: U -   3, V -   2, P -   1
+38.00 (15865), 42.69 (time, timestep, norm)
+Solver iterations: U -   3, V -   3, P -   1
+40.00 (16700), 42.69 (time, timestep, norm)
+Solver iterations: U -   3, V -   3, P -   1
+42.00 (17535), 42.70 (time, timestep, norm)
+Solver iterations: U -   4, V -   4, P -   1
+44.00 (18370), 42.71 (time, timestep, norm)
+Solver iterations: U -   4, V -   4, P -   1
+46.00 (19205), 42.71 (time, timestep, norm)
+Solver iterations: U -   4, V -   4, P -   1
+48.00 (20040), 42.72 (time, timestep, norm)
+Solver iterations: U -   4, V -   4, P -   1
+50.00 (20875), 42.72 (time, timestep, norm)
+Solver iterations: U -   4, V -   5, P -   1
+52.00 (21710), 42.72 (time, timestep, norm)
+Solver iterations: U -   4, V -   5, P -   1
+54.00 (22545), 42.73 (time, timestep, norm)
+Solver iterations: U -   4, V -   5, P -   1
+56.00 (23380), 42.73 (time, timestep, norm)
+Solver iterations: U -   4, V -   5, P -   1
+58.00 (24215), 42.73 (time, timestep, norm)
+Solver iterations: U -   4, V -   5, P -   1
+60.00 (25050), 42.73 (time, timestep, norm)
+Solver iterations: U -   4, V -   5, P -   1
+62.00 (25885), 42.72 (time, timestep, norm)
+Solver iterations: U -   4, V -   5, P -   1
+64.00 (26720), 42.72 (time, timestep, norm)
+Solver iterations: U -   5, V -   5, P -   1
+66.00 (27555), 42.71 (time, timestep, norm)
+Solver iterations: U -   5, V -   5, P -   1
+68.00 (28390), 42.71 (time, timestep, norm)
+Solver iterations: U -   4, V -   5, P -   1
+70.00 (29225), 42.70 (time, timestep, norm)
+Solver iterations: U -   5, V -   5, P -   1
+72.00 (30060), 42.70 (time, timestep, norm)
+Solver iterations: U -   5, V -   5, P -   1
+74.00 (30895), 42.70 (time, timestep, norm)
+Solver iterations: U -   5, V -   5, P -   1
+76.00 (31730), 42.69 (time, timestep, norm)
+Solver iterations: U -   5, V -   5, P -   1
+78.00 (32564), 42.69 (time, timestep, norm)
+Solver iterations: U -   5, V -   5, P -   1
+80.00 (33399), 42.69 (time, timestep, norm)
+Solution norm =  42.6866578985878
