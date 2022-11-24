@@ -1,0 +1,213 @@
+ _ _ _     ____                                             _ 
+| (_) |__ |  _ \ __ _ _ __ __ _ _ __  _   _ _ __ ___   __ _| |
+| | | '_ \| |_) / _` | '__/ _` | '_ \| | | | '_ ` _ \ / _` | |
+| | | |_) |  __/ (_| | | | (_| | | | | |_| | | | | | | (_| | |
+|_|_|_.__/|_|   \__,_|_|  \__,_|_| |_|\__,_|_| |_| |_|\__,_|_|
+
+Version: 0.5.0 
+Contributing developers: Noel Chalmers, Ali Karakus, Kasia Swirydowicz,
+                         Anthony Austin, & Tim Warburton
+
+OCCA Settings:
+
+Name:  [THREAD MODEL]
+Value: CUDA
+Description: OCCA's Parallel execution platform
+Possible values: { Serial, OpenMP, CUDA, HIP, OpenCL }
+
+Name:  [DEVICE NUMBER]
+Value: 0
+Description: Parallel device number
+
+Mesh Settings:
+
+Name:  [MESH FILE]
+Value: cnsSquareCylinderQuad2D.msh
+
+Name:  [MESH DIMENSION]
+Value: 2
+Description: Dimension of input mesh
+Possible values: { 2, 3 }
+
+Name:  [ELEMENT TYPE]
+Value: 4
+Description: Type of mesh elements (number of edges)
+Possible values: { 3, 4, 6, 12 }
+
+Name:  [ELEMENT MAP]
+Value: ISOPARAMETRIC
+Description: Type mapping used to transform each element
+Possible values: { ISOPARAMETRIC, AFFINE }
+
+Name:  [POLYNOMIAL DEGREE]
+Value: 7
+Description: Degree of polynomial finite element space
+Possible values: { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+
+Name:  [PARADOGS PARTITIONING]
+Value: INERTIAL
+Description: Type of Mesh partitioning
+Possible values: { NONE, INERTIAL, SPECTRAL }
+
+CNS Settings:
+
+Name:  [DATA FILE]
+Value: cnsUniform2D.h
+Description: Boundary and Initial conditions header
+
+Name:  [GAMMA]
+Value: 1.4
+Description: Specific heat ratio
+
+Name:  [VISCOSITY]
+Value: 0.00056
+Description: Fluid viscosity
+
+Name:  [ISOTHERMAL]
+Value: FALSE
+Description: Use Isothermal equation of state. When TRUE, energy equation is ignored.
+Possible values: { TRUE, FALSE }
+
+Name:  [ADVECTION TYPE]
+Value: CUBATURE
+Description: Integration type for flux terms
+Possible values: { COLLOCATION, CUBATURE }
+
+Name:  [TIME INTEGRATOR]
+Value: DOPRI5
+Description: Time integration method
+Possible values: { AB3, DOPRI5, LSERK4 }
+
+Name:  [START TIME]
+Value: 0
+Description: Start time for time integration
+
+Name:  [FINAL TIME]
+Value: 100.0
+Description: End time for time integration
+
+Name:  [OUTPUT INTERVAL]
+Value: 1
+Description: Time between printing output data
+
+Name:  [OUTPUT TO FILE]
+Value: FALSE
+Description: Flag for writing fields to VTU files
+Possible values: { TRUE, FALSE }
+
+Name:  [OUTPUT FILE NAME]
+Value: cnsSquareCylinderQuad2D
+
+--------------------------------------ParAdogs Report------------------------------------------
+-----------------------------------------------------------------------------------------------
+   Nranks   |    Elements   |   Per Rank Elements   |   Halo Faces   |   Per Rank Halo Faces  |
+            |               |       (min,avg,max)   |                |         (min,avg,max)  |
+-----------------------------------------------------------------------------------------------
+        1   |        4063   |                4063   |            0   |                     0  |
+            |               |                4063   |                |                     0  |
+            |               |                4063   |                |                     0  |
+-----------------------------------------------------------------------------------------------
+   Partitioning time:   0.00 seconds                                                          |
+-----------------------------------------------------------------------------------------------
+ 0.00 (0), 138.88 (time, timestep, norm)
+ 1.00 (197), 138.88 (time, timestep, norm)
+ 2.00 (393), 138.90 (time, timestep, norm)
+ 3.00 (587), 138.91 (time, timestep, norm)
+ 4.00 (781), 138.92 (time, timestep, norm)
+ 5.00 (975), 138.93 (time, timestep, norm)
+ 6.00 (1169), 138.95 (time, timestep, norm)
+ 7.00 (1362), 138.95 (time, timestep, norm)
+ 8.00 (1556), 138.93 (time, timestep, norm)
+ 9.00 (1750), 138.90 (time, timestep, norm)
+10.00 (1943), 138.87 (time, timestep, norm)
+11.00 (2136), 138.84 (time, timestep, norm)
+12.00 (2329), 138.83 (time, timestep, norm)
+13.00 (2522), 138.85 (time, timestep, norm)
+14.00 (2715), 138.85 (time, timestep, norm)
+15.00 (2907), 138.84 (time, timestep, norm)
+16.00 (3100), 138.84 (time, timestep, norm)
+17.00 (3292), 138.83 (time, timestep, norm)
+18.00 (3485), 138.83 (time, timestep, norm)
+19.00 (3677), 138.84 (time, timestep, norm)
+20.00 (3870), 138.84 (time, timestep, norm)
+21.00 (4062), 138.84 (time, timestep, norm)
+22.00 (4254), 138.84 (time, timestep, norm)
+23.00 (4447), 138.84 (time, timestep, norm)
+24.00 (4639), 138.85 (time, timestep, norm)
+25.00 (4832), 138.85 (time, timestep, norm)
+26.00 (5024), 138.85 (time, timestep, norm)
+27.00 (5216), 138.85 (time, timestep, norm)
+28.00 (5408), 138.85 (time, timestep, norm)
+29.00 (5600), 138.85 (time, timestep, norm)
+30.00 (5793), 138.85 (time, timestep, norm)
+31.00 (5986), 138.86 (time, timestep, norm)
+32.00 (6179), 138.86 (time, timestep, norm)
+33.00 (6372), 138.86 (time, timestep, norm)
+34.00 (6565), 138.87 (time, timestep, norm)
+35.00 (6758), 138.87 (time, timestep, norm)
+36.00 (6952), 138.87 (time, timestep, norm)
+37.00 (7145), 138.86 (time, timestep, norm)
+38.00 (7338), 138.86 (time, timestep, norm)
+39.00 (7532), 138.85 (time, timestep, norm)
+40.00 (7726), 138.84 (time, timestep, norm)
+41.00 (7919), 138.84 (time, timestep, norm)
+42.00 (8112), 138.83 (time, timestep, norm)
+43.00 (8306), 138.82 (time, timestep, norm)
+44.00 (8499), 138.82 (time, timestep, norm)
+45.00 (8693), 138.82 (time, timestep, norm)
+46.00 (8886), 138.82 (time, timestep, norm)
+47.00 (9080), 138.82 (time, timestep, norm)
+48.00 (9273), 138.82 (time, timestep, norm)
+49.00 (9467), 138.82 (time, timestep, norm)
+50.00 (9660), 138.82 (time, timestep, norm)
+51.00 (9853), 138.81 (time, timestep, norm)
+52.00 (10047), 138.81 (time, timestep, norm)
+53.00 (10240), 138.81 (time, timestep, norm)
+54.00 (10434), 138.81 (time, timestep, norm)
+55.00 (10627), 138.80 (time, timestep, norm)
+56.00 (10821), 138.80 (time, timestep, norm)
+57.00 (11014), 138.80 (time, timestep, norm)
+58.00 (11207), 138.80 (time, timestep, norm)
+59.00 (11401), 138.80 (time, timestep, norm)
+60.00 (11594), 138.80 (time, timestep, norm)
+61.00 (11788), 138.80 (time, timestep, norm)
+62.00 (11981), 138.79 (time, timestep, norm)
+63.00 (12175), 138.79 (time, timestep, norm)
+64.00 (12368), 138.79 (time, timestep, norm)
+65.00 (12561), 138.78 (time, timestep, norm)
+66.00 (12755), 138.78 (time, timestep, norm)
+67.00 (12949), 138.78 (time, timestep, norm)
+68.00 (13142), 138.77 (time, timestep, norm)
+69.00 (13335), 138.77 (time, timestep, norm)
+70.00 (13529), 138.77 (time, timestep, norm)
+71.00 (13722), 138.76 (time, timestep, norm)
+72.00 (13915), 138.76 (time, timestep, norm)
+73.00 (14109), 138.76 (time, timestep, norm)
+74.00 (14303), 138.76 (time, timestep, norm)
+75.00 (14496), 138.75 (time, timestep, norm)
+76.00 (14689), 138.75 (time, timestep, norm)
+77.00 (14882), 138.75 (time, timestep, norm)
+78.00 (15076), 138.75 (time, timestep, norm)
+79.00 (15269), 138.75 (time, timestep, norm)
+80.00 (15463), 138.75 (time, timestep, norm)
+81.00 (15657), 138.75 (time, timestep, norm)
+82.00 (15850), 138.75 (time, timestep, norm)
+83.00 (16043), 138.75 (time, timestep, norm)
+84.00 (16237), 138.75 (time, timestep, norm)
+85.00 (16430), 138.75 (time, timestep, norm)
+86.00 (16623), 138.75 (time, timestep, norm)
+87.00 (16817), 138.75 (time, timestep, norm)
+88.00 (17011), 138.75 (time, timestep, norm)
+89.00 (17204), 138.76 (time, timestep, norm)
+90.00 (17397), 138.77 (time, timestep, norm)
+91.00 (17591), 138.77 (time, timestep, norm)
+92.00 (17784), 138.77 (time, timestep, norm)
+93.00 (17978), 138.77 (time, timestep, norm)
+94.00 (18171), 138.77 (time, timestep, norm)
+95.00 (18365), 138.77 (time, timestep, norm)
+96.00 (18558), 138.78 (time, timestep, norm)
+97.00 (18751), 138.78 (time, timestep, norm)
+98.00 (18945), 138.78 (time, timestep, norm)
+99.00 (19138), 138.78 (time, timestep, norm)
+100.00 (19332), 138.78 (time, timestep, norm)
+Solution norm =    138.7809829551
