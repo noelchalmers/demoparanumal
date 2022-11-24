@@ -4,7 +4,7 @@ coarse = DefineNumber[1.75];
 fine   = DefineNumber[0.61];
 fineC  = DefineNumber[0.61];
 
-xmax  = DefineNumber[25];
+xmax  = DefineNumber[50];
 xmin  = DefineNumber[-16];
 ymax  = DefineNumber[22];
 ymin  = DefineNumber[-22];
@@ -55,10 +55,8 @@ Line Loop(16) = {3, 9, 7, -8};
 Line Loop(17) = {10, 11, 12, 13};
 Plane Surface(18) = {16, 17};
 
-Coherence;
 Physical Line("Wall",1) = {12, 11, 13, 10};
 Physical Line("Inflow",2) = {4,1,5};
 Physical Line("Outflow",3) = {2, 9, 6};
 Physical Surface("Domain",9) = {15, 18};
-Coherence;
-Coherence;
+
