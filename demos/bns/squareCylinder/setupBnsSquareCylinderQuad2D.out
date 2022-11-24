@@ -1,0 +1,224 @@
+ _ _ _     ____                                             _ 
+| (_) |__ |  _ \ __ _ _ __ __ _ _ __  _   _ _ __ ___   __ _| |
+| | | '_ \| |_) / _` | '__/ _` | '_ \| | | | '_ ` _ \ / _` | |
+| | | |_) |  __/ (_| | | | (_| | | | | |_| | | | | | | (_| | |
+|_|_|_.__/|_|   \__,_|_|  \__,_|_| |_|\__,_|_| |_| |_|\__,_|_|
+
+Version: 0.5.0 
+Contributing developers: Noel Chalmers, Ali Karakus, Kasia Swirydowicz,
+                         Anthony Austin, & Tim Warburton
+
+OCCA Settings:
+
+Name:  [THREAD MODEL]
+Value: CUDA
+Description: OCCA's Parallel execution platform
+Possible values: { Serial, OpenMP, CUDA, HIP, OpenCL }
+
+Name:  [DEVICE NUMBER]
+Value: 0
+Description: Parallel device number
+
+Mesh Settings:
+
+Name:  [MESH FILE]
+Value: bnsSquareCylinderQuad2D.msh
+
+Name:  [MESH DIMENSION]
+Value: 2
+Description: Dimension of input mesh
+Possible values: { 2, 3 }
+
+Name:  [ELEMENT TYPE]
+Value: 4
+Description: Type of mesh elements (number of edges)
+Possible values: { 3, 4, 6, 12 }
+
+Name:  [ELEMENT MAP]
+Value: ISOPARAMETRIC
+Description: Type mapping used to transform each element
+Possible values: { ISOPARAMETRIC, AFFINE }
+
+Name:  [POLYNOMIAL DEGREE]
+Value: 7
+Description: Degree of polynomial finite element space
+Possible values: { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+
+Name:  [PARADOGS PARTITIONING]
+Value: INERTIAL
+Description: Type of Mesh partitioning
+Possible values: { NONE, INERTIAL, SPECTRAL }
+
+BNS Settings:
+
+Name:  [DATA FILE]
+Value: bnsUniform2D.h
+Description: Boundary and Initial conditions header
+
+Name:  [SPEED OF SOUND]
+Value: 3
+Description: Speed of sound in fluid
+
+Name:  [VISCOSITY]
+Value: 0.004
+Description: Fluid viscosity
+
+Name:  [PML PROFILE ORDER]
+Value: 4
+Description: Polynomial degree of PML damping
+
+Name:  [PML SIGMAX MAX]
+Value: 50
+Description: Coefficent of polynomial PML damping in x direction
+
+Name:  [PML SIGMAY MAX]
+Value: 50
+Description: Coefficent of polynomial PML damping in y direction
+
+Name:  [PML SIGMAZ MAX]
+Value: 100
+Description: Coefficent of polynomial PML damping in z direction
+
+Name:  [PML INTEGRATION]
+Value: COLLOCATION
+Description: Type of integration rule to PML damping profile
+Possible values: { COLLOCATION, CUBATURE }
+
+Name:  [TIME INTEGRATOR]
+Value: SARK4
+Description: Time integration method
+Possible values: { AB3, SAAB3, DOPRI5, LSERK4, SARK4, SARK5, MRAB3, MRSAAB3 }
+
+Name:  [START TIME]
+Value: 0
+Description: Start time for time integration
+
+Name:  [FINAL TIME]
+Value: 100.0
+Description: End time for time integration
+
+Name:  [OUTPUT INTERVAL]
+Value: 1
+Description: Time between printing output data
+
+Name:  [OUTPUT TO FILE]
+Value: FALSE
+Description: Flag for writing fields to VTU files
+Possible values: { TRUE, FALSE }
+
+Name:  [OUTPUT FILE NAME]
+Value: bnsSquareCylinderQuad2D
+
+--------------------------------------ParAdogs Report------------------------------------------
+-----------------------------------------------------------------------------------------------
+   Nranks   |    Elements   |   Per Rank Elements   |   Halo Faces   |   Per Rank Halo Faces  |
+            |               |       (min,avg,max)   |                |         (min,avg,max)  |
+-----------------------------------------------------------------------------------------------
+        1   |        4727   |                4727   |            0   |                     0  |
+            |               |                4727   |                |                     0  |
+            |               |                4727   |                |                     0  |
+-----------------------------------------------------------------------------------------------
+   Partitioning time:   0.00 seconds                                                          |
+-----------------------------------------------------------------------------------------------
+ 0.00 (0),  9.18 (time, timestep, norm)
+ 1.00 (475),  9.18 (time, timestep, norm)
+ 2.00 (1000),  9.18 (time, timestep, norm)
+ 3.00 (1545),  9.18 (time, timestep, norm)
+ 4.00 (2090),  9.18 (time, timestep, norm)
+ 5.00 (2639),  9.18 (time, timestep, norm)
+ 6.00 (3189),  9.18 (time, timestep, norm)
+ 7.00 (3739),  9.18 (time, timestep, norm)
+ 8.00 (4290),  9.18 (time, timestep, norm)
+ 9.00 (4843),  9.18 (time, timestep, norm)
+10.00 (5398),  9.18 (time, timestep, norm)
+11.00 (5954),  9.18 (time, timestep, norm)
+12.00 (6512),  9.18 (time, timestep, norm)
+13.00 (7070),  9.18 (time, timestep, norm)
+14.00 (7631),  9.18 (time, timestep, norm)
+15.00 (8192),  9.18 (time, timestep, norm)
+16.00 (8751),  9.18 (time, timestep, norm)
+17.00 (9309),  9.18 (time, timestep, norm)
+18.00 (9863),  9.18 (time, timestep, norm)
+19.00 (10415),  9.18 (time, timestep, norm)
+20.00 (10967),  9.18 (time, timestep, norm)
+21.00 (11522),  9.18 (time, timestep, norm)
+22.00 (12072),  9.18 (time, timestep, norm)
+23.00 (12554),  9.18 (time, timestep, norm)
+24.00 (13035),  9.18 (time, timestep, norm)
+25.00 (13509),  9.18 (time, timestep, norm)
+26.00 (13975),  9.18 (time, timestep, norm)
+27.00 (14445),  9.18 (time, timestep, norm)
+28.00 (14919),  9.18 (time, timestep, norm)
+29.00 (15392),  9.18 (time, timestep, norm)
+30.00 (15864),  9.18 (time, timestep, norm)
+31.00 (16339),  9.18 (time, timestep, norm)
+32.00 (16813),  9.18 (time, timestep, norm)
+33.00 (17283),  9.18 (time, timestep, norm)
+34.00 (17753),  9.18 (time, timestep, norm)
+35.00 (18217),  9.18 (time, timestep, norm)
+36.00 (18683),  9.18 (time, timestep, norm)
+37.00 (19157),  9.18 (time, timestep, norm)
+38.00 (19636),  9.18 (time, timestep, norm)
+39.00 (20116),  9.18 (time, timestep, norm)
+40.00 (20591),  9.18 (time, timestep, norm)
+41.00 (21059),  9.18 (time, timestep, norm)
+42.00 (21525),  9.18 (time, timestep, norm)
+43.00 (21997),  9.18 (time, timestep, norm)
+44.00 (22472),  9.18 (time, timestep, norm)
+45.00 (22944),  9.18 (time, timestep, norm)
+46.00 (23419),  9.18 (time, timestep, norm)
+47.00 (23893),  9.18 (time, timestep, norm)
+48.00 (24364),  9.18 (time, timestep, norm)
+49.00 (24831),  9.18 (time, timestep, norm)
+50.00 (25303),  9.18 (time, timestep, norm)
+51.00 (25777),  9.18 (time, timestep, norm)
+52.00 (26247),  9.18 (time, timestep, norm)
+53.00 (26726),  9.18 (time, timestep, norm)
+54.00 (27206),  9.18 (time, timestep, norm)
+55.00 (27681),  9.18 (time, timestep, norm)
+56.00 (28150),  9.18 (time, timestep, norm)
+57.00 (28616),  9.18 (time, timestep, norm)
+58.00 (29087),  9.18 (time, timestep, norm)
+59.00 (29560),  9.17 (time, timestep, norm)
+60.00 (30032),  9.17 (time, timestep, norm)
+61.00 (30509),  9.17 (time, timestep, norm)
+62.00 (30984),  9.17 (time, timestep, norm)
+63.00 (31457),  9.17 (time, timestep, norm)
+64.00 (31924),  9.17 (time, timestep, norm)
+65.00 (32390),  9.18 (time, timestep, norm)
+66.00 (32874),  9.18 (time, timestep, norm)
+67.00 (33342),  9.18 (time, timestep, norm)
+68.00 (33818),  9.18 (time, timestep, norm)
+69.00 (34298),  9.18 (time, timestep, norm)
+70.00 (34774),  9.18 (time, timestep, norm)
+71.00 (35244),  9.17 (time, timestep, norm)
+72.00 (35712),  9.17 (time, timestep, norm)
+73.00 (36188),  9.17 (time, timestep, norm)
+74.00 (36661),  9.17 (time, timestep, norm)
+75.00 (37135),  9.17 (time, timestep, norm)
+76.00 (37610),  9.17 (time, timestep, norm)
+77.00 (38088),  9.17 (time, timestep, norm)
+78.00 (38564),  9.17 (time, timestep, norm)
+79.00 (39033),  9.17 (time, timestep, norm)
+80.00 (39501),  9.17 (time, timestep, norm)
+81.00 (39984),  9.17 (time, timestep, norm)
+82.00 (40458),  9.17 (time, timestep, norm)
+83.00 (40931),  9.17 (time, timestep, norm)
+84.00 (41408),  9.17 (time, timestep, norm)
+85.00 (41885),  9.17 (time, timestep, norm)
+86.00 (42357),  9.17 (time, timestep, norm)
+87.00 (42823),  9.17 (time, timestep, norm)
+88.00 (43314),  9.17 (time, timestep, norm)
+89.00 (43794),  9.17 (time, timestep, norm)
+90.00 (44264),  9.17 (time, timestep, norm)
+91.00 (44738),  9.17 (time, timestep, norm)
+92.00 (45218),  9.17 (time, timestep, norm)
+93.00 (45697),  9.17 (time, timestep, norm)
+94.00 (46170),  9.17 (time, timestep, norm)
+95.00 (46638),  9.17 (time, timestep, norm)
+96.00 (47138),  9.17 (time, timestep, norm)
+97.00 (47635),  9.17 (time, timestep, norm)
+98.00 (48102),  9.17 (time, timestep, norm)
+99.00 (48575),  9.17 (time, timestep, norm)
+100.00 (49050),  9.17 (time, timestep, norm)
+Solution norm =  9.15577897813557
